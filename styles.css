@@ -1,0 +1,99 @@
+body {
+  font-size: 15px;
+}
+
+.container {
+  width: 1440px;
+  margin: 5rem auto;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: auto;
+}
+
+.card-content {
+  margin-left: 40px;
+}
+
+.card-header {
+  margin-top: 50px;
+}
+
+.card-body h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  font-size: 40px;
+}
+
+.card-body p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  width: 15rem;
+  margin-bottom: 5rem;
+}
+
+.card-footer button {
+  background-color: hsl(0, 0%, 95%);
+  padding: 15px 25px;
+  font-family: 'Lexend Deca', sans-serif;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.card.orange {
+  background-color: #e28525;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card.orange .card-footer button {
+  color: #e28525;
+}
+
+.card.card.lagoon .card-footer button {
+  color: #00403f;
+}
+.card.card.green .card-footer button {
+  color: #016972;
+}
+.card.orange .card-footer button:hover,
+.card.green .card-footer button:hover,
+.card.lagoon .card-footer button:hover {
+  color: #fff;
+  background-color: #33312e;
+}
+
+.card.lagoon {
+  background-color: #016972;
+}
+.card.green {
+  background-color: #00403f;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 375px;
+  }
+  .card.orange {
+    border-bottom-left-radius: 0;
+  }
+  .card.green {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+}
